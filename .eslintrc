@@ -8,8 +8,6 @@
     "mocha": true
   },
   "globals": {
-    "shallow": true,
-    "mount": true,
     "expect": true,
     "$": true
   },
@@ -63,32 +61,12 @@
         }
       }
     ],
-    "jsx-a11y/href-no-hash": "off",
-    "jsx-a11y/anchor-is-valid": [
-      "warn",
+    "no-plusplus": [
+      "error",
       {
-        "aspects": [
-          "invalidHref"
-        ]
+        "allowForLoopAfterthoughts": true
       }
-    ],
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
-    ],
-    "react/prefer-stateless-function": [
-      0,
-      {
-        "ignorePureComponents": true
-      }
-    ],
-    "react/jsx-uses-react": 2,
-    "react/react-in-jsx-scope": 2
+    ]
   },
   "parser": "babel-eslint"
 }
